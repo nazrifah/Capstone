@@ -30,6 +30,11 @@ class MainActivity : AppCompatActivity() {
                     Intent(this@MainActivity, OptionActivity::class.java)
                 )
             }
+            card2.setOnClickListener {
+                startActivity(
+                        Intent(this@MainActivity, OptionActivity::class.java)
+                )
+            }
 
             fab.setOnClickListener{
                 settingFloatingButton()

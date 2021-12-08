@@ -27,7 +27,6 @@ class DetailListActivity : AppCompatActivity() {
         setBinding(viewModel.getDetailObat(intent.getIntExtra(EXTRA_ID, 0)))
     }
     private fun setBinding(data: DataObat) {
-
         binding.tvNama.text = data.nama
         binding.tvDeskripsi.text = data.deskripsi
     }

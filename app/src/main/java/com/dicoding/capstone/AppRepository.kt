@@ -48,8 +48,7 @@ class AppRepository private constructor(private val remoteData: RemoteData) : Da
                 response.dosis,
                 response.aturan,
                 response.efek,
-                response.foto
-                )
+                response.foto)
             }
         }
         return detailO
