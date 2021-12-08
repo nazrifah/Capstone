@@ -62,10 +62,16 @@ class MainActivity : AppCompatActivity() {
         if (!clickedFAB){
             binding.menuList.visibility = View.VISIBLE
             binding.menuHome.visibility = View.VISIBLE
+
+            binding.menuHomeText.visibility = View.VISIBLE
+            binding.menuListText.visibility = View.VISIBLE
         }
         else {
             binding.menuList.visibility = View.INVISIBLE
             binding.menuHome.visibility = View.INVISIBLE
+
+            binding.menuHomeText.visibility = View.INVISIBLE
+            binding.menuListText.visibility = View.INVISIBLE
         }
     }
     private fun animationFab(clickedFAB : Boolean){
