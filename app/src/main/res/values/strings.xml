@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Capstone</string>
+    <string name="harga">Harga:</string>
+    <string name="nama">Nama:</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="detail_obat">Detail Obat</string>
+    <string name="informasi">Informasi Lebih Lanjut</string>
+    <string name="dosis">Dosis</string>
+    <string name="efek_samping">Efek Samping</string>
+    <string name="aturan">Aturan</string>
+    <string name="hubungi_kami">Hubungi Kami</string>
+    <string name="more">More</string>
 </resources>

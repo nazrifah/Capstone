@@ -20,7 +20,10 @@
         <activity android:name=".ui.AboutUsActivity" />
         <activity android:name=".ui.OptionActivity" />
         <activity android:name=".ui.ListActivity" />
-        <activity android:name=".ui.DetailListActivity" />
+        <activity
+            android:name=".ui.DetailListActivity"
+            android:label="@string/detail_obat"
+            android:parentActivityName=".ui.ListActivity"/>
         <activity android:name=".ui.MainActivity"></activity>
     </application>
 
