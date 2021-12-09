@@ -24,7 +24,9 @@
             android:name=".ui.DetailListActivity"
             android:label="@string/detail_obat"
             android:parentActivityName=".ui.ListActivity"/>
-        <activity android:name=".ui.MainActivity"></activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="Home"></activity>
     </application>
 
 </manifest>
