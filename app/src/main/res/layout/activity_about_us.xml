@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Tentang Kami"
+        android:text="@string/tentang_kami"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,27 +30,29 @@
         android:id="@+id/tv_title2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Memberikan Informasi"
+        android:text="@string/apotek_malaka"
         android:textColor="#FFF"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="@id/tv_title1"
         app:layout_constraintTop_toBottomOf="@id/tv_title1"
         app:layout_constraintEnd_toEndOf="@id/tv_title1"/>
+
     <ImageView
         android:id="@+id/iv_pic"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/ic_baseline_medical_services_24"
-        android:layout_marginTop="30dp"
-        app:layout_constraintStart_toStartOf="@id/tv_title2"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/apotek"
         app:layout_constraintEnd_toEndOf="@id/tv_title2"
-        app:layout_constraintTop_toBottomOf="@id/tv_title2"/>
+        app:layout_constraintStart_toStartOf="@id/tv_title2"
+        app:layout_constraintTop_toBottomOf="@id/tv_title2" />
 
     <LinearLayout
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iv_pic"
         android:padding="16dp"
+        android:layout_marginTop="16dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:orientation="vertical"
@@ -70,7 +72,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Premium Resource"
+                android:text="@string/admin_aktif"
                 android:textColor="@color/black"
                 android:textSize="16sp"/>
         </LinearLayout>
@@ -87,7 +89,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Premium Resource"
+                android:text="@string/jadwal_buka"
                 android:textColor="@color/black"
                 android:textSize="16sp"/>
         </LinearLayout>
@@ -104,7 +106,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Premium Resource"
+                android:text="@string/pembayaran_cod"
                 android:textColor="@color/black"
                 android:textSize="16sp"/>
         </LinearLayout>
@@ -112,16 +114,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginBottom="20dp">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_circle"
-                android:layout_marginEnd="10dp"/>
+            android:gravity="center"
+            android:layout_marginBottom="8dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Premium Resource"
+                android:text="@string/contact_admin"
                 android:textColor="@color/black"
                 android:textSize="16sp"/>
         </LinearLayout>
@@ -129,53 +127,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:gravity="center"
             android:layout_marginBottom="20dp">
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_circle"
-                android:layout_marginEnd="10dp"/>
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/whatsapp"/>
             <TextView
+                android:id="@+id/how_contact"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Premium Resource"
+                android:text="@string/_081261394158"
                 android:textColor="@color/black"
                 android:textSize="16sp"/>
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="20dp">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_circle"
-                android:layout_marginEnd="10dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Premium Resource"
-                android:textColor="@color/black"
-                android:textSize="16sp"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="20dp">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_circle"
-                android:layout_marginEnd="10dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Premium Resource"
-                android:textColor="@color/black"
-                android:textSize="16sp"/>
-        </LinearLayout>
+
+
+
+
 
 
 

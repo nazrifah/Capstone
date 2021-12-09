@@ -17,7 +17,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.AboutUsActivity" />
+        <activity android:name=".ui.AboutUsActivity"
+                  android:label="About Us"
+                  android:parentActivityName=".ui.MainActivity"/>
         <activity android:name=".ui.OptionActivity"
                   android:label="@string/rekomendasi_obat"
                   android:parentActivityName=".ui.MainActivity"/>
