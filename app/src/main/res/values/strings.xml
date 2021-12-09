@@ -10,4 +10,6 @@
     <string name="aturan">Aturan</string>
     <string name="hubungi_kami">Hubungi Kami</string>
     <string name="more">More</string>
+    <string name="rekomendasi_obat">Rekomendasi Obat</string>
+    <string name="list_semua_obat">List Semua Obat</string>
 </resources>

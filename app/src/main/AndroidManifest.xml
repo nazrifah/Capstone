@@ -18,15 +18,19 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.AboutUsActivity" />
-        <activity android:name=".ui.OptionActivity" />
-        <activity android:name=".ui.ListActivity" />
+        <activity android:name=".ui.OptionActivity"
+                  android:label="@string/rekomendasi_obat"
+                  android:parentActivityName=".ui.MainActivity"/>
+        <activity android:name=".ui.ListActivity"
+                  android:label="@string/list_semua_obat"
+                  android:parentActivityName=".ui.MainActivity"/>
         <activity
             android:name=".ui.DetailListActivity"
             android:label="@string/detail_obat"
             android:parentActivityName=".ui.ListActivity"/>
         <activity
             android:name=".ui.MainActivity"
-            android:label="Home"></activity>
+            android:label="Home"/>
     </application>
 
 </manifest>
