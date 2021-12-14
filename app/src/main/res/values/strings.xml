@@ -1,5 +1,24 @@
 <resources>
     <string name="app_name">Capstone</string>
+    <string name="harga">Harga:</string>
+    <string name="nama">Nama:</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="detail_obat">Detail Obat</string>
+    <string name="informasi">Informasi Lebih Lanjut</string>
+    <string name="dosis">Dosis</string>
+    <string name="efek_samping">Efek Samping</string>
+    <string name="aturan">Aturan</string>
+    <string name="hubungi_kami">Hubungi Kami</string>
+    <string name="more">More</string>
+    <string name="rekomendasi_obat">Rekomendasi Obat</string>
+    <string name="list_semua_obat">List Semua Obat</string>
+    <string name="tentang_kami">Tentang Kami</string>
+    <string name="apotek_malaka">Apotek Malaka</string>
+    <string name="admin_aktif">Admin Aktif</string>
+    <string name="jadwal_buka">Buka Setiap Hari</string>
+    <string name="pembayaran_cod">Menerima Pembayaran COD</string>
+    <string name="contact_admin">Contact Admin</string>
+    <string name="_081261394158">081261394158</string>
     <string name="username">username</string>
     <string name="login">Login</string>
     <string name="password">password</string>
