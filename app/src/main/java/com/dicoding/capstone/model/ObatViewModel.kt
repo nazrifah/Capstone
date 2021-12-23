@@ -13,4 +13,10 @@ class ObatViewModel(private val appRepository: AppRepository):ViewModel() {
     fun getDetailObat(id: Int): DataObat = appRepository.getDetailObat(id)
 
     fun getCatBat(id:Int): LiveData<Resource<List<ObatEntity>>> = appRepository.getCatBat()
+
+    fun getCatDem(id:Int): LiveData<Resource<List<ObatEntity>>> = appRepository.getCatDem()
+
+    fun getCatKul(id:Int): LiveData<Resource<List<ObatEntity>>> = appRepository.getCatKul()
+
+    fun getCatDia(id:Int): LiveData<Resource<List<ObatEntity>>> = appRepository.getCatDia()
 }

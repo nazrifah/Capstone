@@ -46,6 +46,21 @@ class OptionActivity : AppCompatActivity() {
                     adapter.listData(obat.data)
                     adapter.notifyDataSetChanged()
                 })
+            }else if (idExtra == 2){
+                viewModel.getCatDem(idExtra).observe(this, { obat ->
+                    adapter.listData(obat.data)
+                    adapter.notifyDataSetChanged()
+                })
+            }else if (idExtra == 3){
+                viewModel.getCatKul(idExtra).observe(this, { obat ->
+                    adapter.listData(obat.data)
+                    adapter.notifyDataSetChanged()
+                })
+            }else if (idExtra == 4){
+                viewModel.getCatDia(idExtra).observe(this, { obat ->
+                    adapter.listData(obat.data)
+                    adapter.notifyDataSetChanged()
+                })
             }
         }
 

@@ -17,4 +17,10 @@ class ObatDataSource private constructor(private val obatDao: ObatDao) {
     fun insertObat(obat : List<ObatEntity>) = obatDao.insertObat(obat)
 
     fun getCatBat(): LiveData<List<ObatEntity>> = obatDao.getCatBat()
+
+    fun getCatDem(): LiveData<List<ObatEntity>> = obatDao.getCatDem()
+
+    fun getCatKul(): LiveData<List<ObatEntity>> = obatDao.getCatKul()
+
+    fun getCatDia(): LiveData<List<ObatEntity>> = obatDao.getCatDia()
 }

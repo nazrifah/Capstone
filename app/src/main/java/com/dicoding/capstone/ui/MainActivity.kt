@@ -22,6 +22,9 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         const val ID_BATUK = 1
+        const val ID_DEMAM = 2
+        const val ID_KULIT = 3
+        const val ID_DIABETES = 4
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,9 +39,22 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             card2.setOnClickListener {
-                startActivity(
-                        Intent(this@MainActivity, OptionActivity::class.java)
-                )
+                Intent(this@MainActivity,OptionActivity::class.java).also {
+                    it.putExtra(OptionActivity.EXTRA_ID, ID_DEMAM)
+                    startActivity(it)
+                }
+            }
+            card3.setOnClickListener {
+                Intent(this@MainActivity,OptionActivity::class.java).also {
+                    it.putExtra(OptionActivity.EXTRA_ID, ID_KULIT)
+                    startActivity(it)
+                }
+            }
+            card4.setOnClickListener {
+                Intent(this@MainActivity,OptionActivity::class.java).also {
+                    it.putExtra(OptionActivity.EXTRA_ID, ID_DIABETES)
+                    startActivity(it)
+                }
             }
 
             fab.setOnClickListener{

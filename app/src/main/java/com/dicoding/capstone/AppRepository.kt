@@ -119,4 +119,106 @@ class AppRepository private constructor(private val remoteData: RemoteData,
             }
         }.asLiveData()
     }
+    override fun getCatDem(): LiveData<Resource<List<ObatEntity>>> {
+        return object :
+            NetworkBoundResource<List<ObatEntity>, List<DataObat>>(appExecutors) {
+            public override fun loadFromDB(): LiveData<List<ObatEntity>> =
+                obatDataSource.getCatDem()
+
+            override fun shouldFetch(data: List<ObatEntity>?): Boolean =
+                data == null || data.isEmpty()
+
+            public override fun createCall(): LiveData<ApiResponse<List<DataObat>>> =
+                remoteData.getAllObat()
+
+            override fun saveCallResult(data: List<DataObat>) {
+                val obatList = ArrayList<ObatEntity>()
+                for (response in data) {
+                    val obat = ObatEntity(
+                        response.id,
+                        response.nama,
+                        response.harga,
+                        response.deskripsi,
+                        response.indikasi,
+                        response.komposisi,
+                        response.dosis,
+                        response.aturan,
+                        response.efek,
+                        response.foto,
+                        response.category
+                    )
+                    obatList.add(obat)
+                }
+                obatDataSource.insertObat(obatList)
+            }
+        }.asLiveData()
+    }
+    override fun getCatKul(): LiveData<Resource<List<ObatEntity>>> {
+        return object :
+            NetworkBoundResource<List<ObatEntity>, List<DataObat>>(appExecutors) {
+            public override fun loadFromDB(): LiveData<List<ObatEntity>> =
+                obatDataSource.getCatKul()
+
+            override fun shouldFetch(data: List<ObatEntity>?): Boolean =
+                data == null || data.isEmpty()
+
+            public override fun createCall(): LiveData<ApiResponse<List<DataObat>>> =
+                remoteData.getAllObat()
+
+            override fun saveCallResult(data: List<DataObat>) {
+                val obatList = ArrayList<ObatEntity>()
+                for (response in data) {
+                    val obat = ObatEntity(
+                        response.id,
+                        response.nama,
+                        response.harga,
+                        response.deskripsi,
+                        response.indikasi,
+                        response.komposisi,
+                        response.dosis,
+                        response.aturan,
+                        response.efek,
+                        response.foto,
+                        response.category
+                    )
+                    obatList.add(obat)
+                }
+                obatDataSource.insertObat(obatList)
+            }
+        }.asLiveData()
+    }
+    override fun getCatDia(): LiveData<Resource<List<ObatEntity>>> {
+        return object :
+            NetworkBoundResource<List<ObatEntity>, List<DataObat>>(appExecutors) {
+            public override fun loadFromDB(): LiveData<List<ObatEntity>> =
+                obatDataSource.getCatDia()
+
+            override fun shouldFetch(data: List<ObatEntity>?): Boolean =
+                data == null || data.isEmpty()
+
+            public override fun createCall(): LiveData<ApiResponse<List<DataObat>>> =
+                remoteData.getAllObat()
+
+            override fun saveCallResult(data: List<DataObat>) {
+                val obatList = ArrayList<ObatEntity>()
+                for (response in data) {
+                    val obat = ObatEntity(
+                        response.id,
+                        response.nama,
+                        response.harga,
+                        response.deskripsi,
+                        response.indikasi,
+                        response.komposisi,
+                        response.dosis,
+                        response.aturan,
+                        response.efek,
+                        response.foto,
+                        response.category
+                    )
+                    obatList.add(obat)
+                }
+                obatDataSource.insertObat(obatList)
+            }
+        }.asLiveData()
+    }
 }

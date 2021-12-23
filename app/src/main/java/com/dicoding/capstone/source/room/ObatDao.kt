@@ -17,4 +17,13 @@ interface ObatDao {
 
     @Query("SELECT * FROM obatEntities where category='batuk'")
     fun getCatBat(): LiveData<List<ObatEntity>>
+
+    @Query("SELECT * FROM obatEntities where category='demam'")
+    fun getCatDem(): LiveData<List<ObatEntity>>
+
+    @Query("SELECT * FROM obatEntities where category='kulit'")
+    fun getCatKul(): LiveData<List<ObatEntity>>
+
+    @Query("SELECT * FROM obatEntities where category='diabetes'")
+    fun getCatDia(): LiveData<List<ObatEntity>>
 }

@@ -13,4 +13,10 @@ interface DataSource {
     fun insertObat(obat: List<ObatEntity>)
 
     fun getCatBat() : LiveData<Resource<List<ObatEntity>>>
+
+    fun getCatDem() : LiveData<Resource<List<ObatEntity>>>
+
+    fun getCatKul() : LiveData<Resource<List<ObatEntity>>>
+
+    fun getCatDia() : LiveData<Resource<List<ObatEntity>>>
 }
