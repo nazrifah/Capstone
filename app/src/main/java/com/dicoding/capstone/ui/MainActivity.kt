@@ -20,15 +20,20 @@ class MainActivity : AppCompatActivity() {
     private val closingAnimation : Animation by lazy { AnimationUtils.loadAnimation(this, R.anim.closing_anim) }
     private var clickedFab = false
 
+    companion object {
+        const val ID_BATUK = 1
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.apply {
             card1.setOnClickListener {
-                startActivity(
-                    Intent(this@MainActivity, OptionActivity::class.java)
-                )
+                Intent(this@MainActivity,OptionActivity::class.java).also {
+                    it.putExtra(OptionActivity.EXTRA_ID, ID_BATUK)
+                    startActivity(it)
+                }
             }
             card2.setOnClickListener {
                 startActivity(

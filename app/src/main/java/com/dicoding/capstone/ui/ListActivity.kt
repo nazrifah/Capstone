@@ -10,6 +10,7 @@ import com.dicoding.capstone.model.FactoryViewModel
 import com.dicoding.capstone.model.ObatViewModel
 import com.dicoding.capstone.adapter.DataAdapter
 import com.dicoding.capstone.databinding.ActivityListBinding
+import com.dicoding.capstone.source.entity.ObatEntity
 
 class ListActivity : AppCompatActivity() {
 
@@ -33,10 +34,13 @@ class ListActivity : AppCompatActivity() {
 
         val factory = FactoryViewModel.getInstance(this)
         viewModel = ViewModelProvider(this, factory).get(ObatViewModel::class.java)
-        adapter.listData(viewModel.getObat())
+        viewModel.getObat().observe(this, { obat ->
+            adapter.listData(obat.data)
+            adapter.notifyDataSetChanged()
+        })
 
         adapter.setOnItemClickCallback(object : DataAdapter.OnItemClickCallback{
-            override fun onItemClicked(data: DataObat) {
+            override fun onItemClicked(data: ObatEntity) {
                 Intent(this@ListActivity, DetailListActivity::class.java).also {
                     it.putExtra(DetailListActivity.EXTRA_ID, data.id)
                     startActivity(it)
