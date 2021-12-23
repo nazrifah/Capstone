@@ -10,5 +10,6 @@ data class DataObat (
     var dosis: String,
     var aturan: String,
     var efek: String,
-    var foto: String
+    var foto: String,
+    var category: String
 )

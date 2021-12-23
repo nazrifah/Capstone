@@ -41,8 +41,9 @@ class JsonHelper (private val context: Context) {
                 val aturan = obat.getString("aturan")
                 val efek = obat.getString("efek")
                 val foto = obat.getString("foto")
+                val category = obat.getString("category")
 
-                val obatResponse = DataObat(id, nama, harga, deskripsi,indikasi, komposisi, dosis,aturan,efek,foto)
+                val obatResponse = DataObat(id, nama, harga, deskripsi,indikasi, komposisi, dosis,aturan,efek,foto,category)
                 listObat.add(obatResponse)
             }
         }
