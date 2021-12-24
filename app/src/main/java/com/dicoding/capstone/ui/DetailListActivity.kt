@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
+import com.bumptech.glide.Glide
 import com.dicoding.capstone.adapter.DataObat
 import com.dicoding.capstone.model.FactoryViewModel
 import com.dicoding.capstone.model.ObatViewModel
@@ -45,5 +46,8 @@ class DetailListActivity : AppCompatActivity() {
         binding.tvDosis.text = data.dosis
         binding.tvAturan.text = data.aturan
         binding.tvEfek.text = data.efek
+        Glide.with(this)
+            .load(data.foto)
+            .into(binding.ivPic)
     }
 }
