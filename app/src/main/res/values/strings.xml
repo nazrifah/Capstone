@@ -19,12 +19,22 @@
     <string name="pembayaran_cod">Menerima Pembayaran COD</string>
     <string name="contact_admin">Contact Admin</string>
     <string name="_081261394158">081261394158</string>
-    <string name="username">username</string>
-    <string name="login">Login</string>
-    <string name="password">password</string>
-    <string name="forgot_password">Forgot password?</string>
-    <string name="signup">Sign Up</string>
     <string name="icon_google">Icon Google</string>
     <string name="icon_facebook">Icon_Facebook</string>
+
+    <string name="sign_in_to_apoteku">Sign in to Apoteku</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="text_klik_sigup">New to Apoteku? Create an account.</string>
+    <string name="create_new_account_here">Create new Account Here</string>
+    <string name="name">Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="address">Address</string>
+    <string name="email">Email</string>
+    <string name="sign_up">Sign up</string>
+    <string name="back_to_sig_in">back to sig in</string>
+    <string name="admin">Admin</string>
+    <string name="chat_admin">Chat Admin</string>
 
 </resources>

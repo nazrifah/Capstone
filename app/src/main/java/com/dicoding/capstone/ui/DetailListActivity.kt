@@ -1,8 +1,11 @@
 package com.dicoding.capstone.ui
 
+import android.annotation.SuppressLint
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.dicoding.capstone.adapter.DataObat
 import com.dicoding.capstone.model.FactoryViewModel
@@ -27,12 +30,12 @@ class DetailListActivity : AppCompatActivity() {
         val viewModel = ViewModelProvider(this, factory).get(ObatViewModel::class.java)
 
         setBinding(viewModel.getDetailObat(intent.getIntExtra(EXTRA_ID, 0)))
-        binding.apply {
-            btnMore.setOnClickListener {
-                startActivity(
-                        Intent(this@DetailListActivity, AboutUsActivity::class.java)
-                )
-            }
+        binding.btnAdmin.setOnClickListener {
+            val admin = "081261394158"
+            val url = "https://api.whatsapp.com/send?phone=$admin"
+            val i = Intent(Intent.ACTION_VIEW)
+            i.data = Uri.parse(url)
+            startActivity(i)
         }
     }
     private fun setBinding(data: DataObat) {

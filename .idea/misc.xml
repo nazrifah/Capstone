@@ -6,10 +6,30 @@
         <entry key="..\:/Belajar Android Programing/Capstone/app/src/main/res/drawable-v24/ic_person_outline_24.xml" value="0.15" />
         <entry key="..\:/Belajar Android Programing/Capstone/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Belajar Android Programing/Capstone/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Belajar Android Programing/TerakhirCapstone/app/src/main/res/drawable-v24/background_blue1.xml" value="0.11458333333333333" />
+        <entry key="..\:/Belajar Android Programing/TerakhirCapstone/app/src/main/res/drawable-v24/background_blue2.xml" value="0.11458333333333333" />
+        <entry key="..\:/Belajar Android Programing/TerakhirCapstone/app/src/main/res/drawable-v24/ic_baseline_info_24.xml" value="0.11458333333333333" />
+        <entry key="..\:/Belajar Android Programing/TerakhirCapstone/app/src/main/res/drawable-v24/ic_baseline_keyboard_backspace_24.xml" value="0.11458333333333333" />
+        <entry key="..\:/Belajar Android Programing/TerakhirCapstone/app/src/main/res/drawable-v24/ic_baseline_person_outline_24.xml" value="0.11458333333333333" />
+        <entry key="..\:/Belajar Android Programing/TerakhirCapstone/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.11458333333333333" />
+        <entry key="..\:/Belajar Android Programing/TerakhirCapstone/app/src/main/res/drawable-v24/round_rect.xml" value="0.11458333333333333" />
+        <entry key="..\:/Belajar Android Programing/TerakhirCapstone/app/src/main/res/drawable/background_blue.xml" value="0.11875" />
+        <entry key="..\:/Belajar Android Programing/TerakhirCapstone/app/src/main/res/drawable/background_blue1.xml" value="0.11458333333333333" />
+        <entry key="..\:/Belajar Android Programing/TerakhirCapstone/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.11458333333333333" />
+        <entry key="..\:/Belajar Android Programing/TerakhirCapstone/app/src/main/res/drawable/ic_baseline_keyboard_backspace_24.xml" value="0.11458333333333333" />
+        <entry key="..\:/Belajar Android Programing/TerakhirCapstone/app/src/main/res/drawable/ic_baseline_medical_services_24.xml" value="0.11458333333333333" />
+        <entry key="..\:/Belajar Android Programing/TerakhirCapstone/app/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.11458333333333333" />
+        <entry key="..\:/Belajar Android Programing/TerakhirCapstone/app/src/main/res/drawable/ic_launcher_background.xml" value="0.11458333333333333" />
+        <entry key="..\:/Belajar Android Programing/TerakhirCapstone/app/src/main/res/layout/activity_detail_list.xml" value="0.16621376811594202" />
+        <entry key="..\:/Belajar Android Programing/TerakhirCapstone/app/src/main/res/layout/activity_login.xml" value="0.5" />
+        <entry key="..\:/Belajar Android Programing/TerakhirCapstone/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Belajar Android Programing/TerakhirCapstone/app/src/main/res/layout/activity_sigin.xml" value="0.1213768115942029" />
+        <entry key="..\:/Belajar Android Programing/TerakhirCapstone/app/src/main/res/layout/activity_signin.xml" value="0.1" />
+        <entry key="..\:/Belajar Android Programing/TerakhirCapstone/app/src/main/res/layout/activity_signup.xml" value="0.16" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
